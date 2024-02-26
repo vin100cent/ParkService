@@ -8,6 +8,10 @@ This program uses a ZeroMQ message queue to communicate with a separate program 
 
 ### Architecture
 
+
+![UML Sequence Diagram](https://github.com/vin100cent/ParkService/blob/main/SequenceDiagram.png)
+
+
 ```UML Diagram
  ________________________       ____________________       _________________      _______
 |Program making a request|     |ZeroMQ Message Queue|     |Park microservice|    |NPS API|
