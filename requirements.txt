@@ -1,0 +1,3 @@
+zmq
+requests
+python-dotenv
