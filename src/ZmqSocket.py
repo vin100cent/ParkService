@@ -24,7 +24,7 @@ def startZmq(port):
         try:
             # parse request
             parkName = getParkName(message)
-            response = json.dumps({"parkName": parkName})
+            response = json.dumps({"name": parkName})
         except Exception as e:
             response = json.dumps({"error": str(e)})
 
