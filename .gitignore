@@ -1,0 +1,8 @@
+# environment files
+.env
+
+# virtual environemnt
+venv/
+
+# test files 
+src/test/
