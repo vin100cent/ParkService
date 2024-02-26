@@ -2,9 +2,9 @@
 
 A microservice that provides information about American National Parks.
 
->[!info] Contents
->[#Setup]
->[#How to Request and Receive]
+
+[Setup](https://github.com/vin100cent/ParkService/blob/main/README.md#setup)
+[How to Receive and Request](https://github.com/vin100cent/ParkService/blob/main/README.md#)
 
 ## About
 
