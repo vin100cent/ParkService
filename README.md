@@ -2,9 +2,13 @@
 
 A microservice that provides information about American National Parks.
 
+>[!info] Contents
+>[#Setup]
+>[#How to Request and Receive]
+
 ## About
 
-This program uses a ZeroMQ message queue to communicate with a separate program that makes requests for information about American National Parks. The program uses the National Park Service API to retrieve information about the parks and returns it to the requesting program.
+This program uses a ZeroMQ message queue to communicate with a separate program that makes requests for information about American National Parks. The program uses the National Park Service API to retrieve information about the parks and returns it to the requesting program. The main feature of this program is to return a random National Park Name. The program is configurable and easily extended to fetch any information (refer to [API Documentation](https://www.nps.gov/subjects/developer/api-documentation.htm#/parks/getPark)
 
 **Features**
 Random park: the program retrieves a list of all parks from the nps API and selects a random park from the list.
@@ -54,6 +58,8 @@ NPS_API_KEY=YOUR_KEY_GOES_HERE
 
 Run the server ParkService.py then the Client file (TestClient.py is provided or use your own)
 
-## How to Request and Receive data
+## How to Request and Receive
 
 ![Example Request and Receive](https://github.com/vin100cent/ParkService/blob/main/ExampleRequest.png)
+
+Simply hit enter to receive a random park. If `""` or `None` is received a random park name will be generated and printed to the terminal. Optionally, one may enter a valid park code to Request and Receive a specific national park. 
