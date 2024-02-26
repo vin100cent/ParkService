@@ -10,13 +10,12 @@ This program uses a ZeroMQ message queue to communicate with a separate program 
 Random park: the program retrieves a list of all parks from the nps API and selects a random park from the list.
 Get park by id: the program retrieves a park from the NPS API by its id.
 
-
 ![UML Sequence Diagram](https://github.com/vin100cent/ParkService/blob/main/SequenceDiagram.png)
-
 
 ## Setup
 
 **Example Directory**
+
 ```bash
 /park_service_microservice
 |-- /venv
@@ -37,7 +36,7 @@ Get park by id: the program retrieves a park from the NPS API by its id.
 
 2. Get an API Key from the [NPS get started site](https://www.nps.gov/subjects/developer/get-started.htm)
 
-3. Setup Environment 
+3. Setup Environment
 
 Install and read documentation [ZeroMQ](https://zeromq.org/languages/python/)
 
@@ -47,16 +46,14 @@ Other packages needed are "requests" and "python-dotenv", I'd recommend placing 
 pip3 install -r requirements.txt
 ```
 
-place api key in .env 
+place api key in .env
+
 ```zsh
 NPS_API_KEY=YOUR_KEY_GOES_HERE
 ```
 
 Run the server ParkService.py then the Client file (TestClient.py is provided or use your own)
 
+## How to Request and Receive data
 
-## How to Request and Receive data 
-
-
-
-
+![Example Request and Receive](https://github.com/vin100cent/ParkService/blob/main/ExampleRequest.png)
